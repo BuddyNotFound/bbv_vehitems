@@ -18,6 +18,7 @@ function Main:StoreVeh()
             local vehmodel = string.lower(GetDisplayNameFromVehicleModel(GetEntityModel(self.My)))
             TriggerServerEvent('bbv_vehitems:returnitem',vehmodel)
             DeleteVehicle(self.My)
+            self.My = nil
             self:Notify("Vehicle Stored", 'error', 2500)
         else
             self:Notify("This is not your vehicle", 'error', 2500)
