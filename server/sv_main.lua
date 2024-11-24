@@ -19,7 +19,6 @@ if Config.Settings.Framework == "ESX" then
             local src = source
             local xPlayer = ESX.GetPlayerFromId(src)
             xPlayer.removeInventoryItem(k, 1)
-            TriggerClientEvent("inventory:client:ItemBox", src, QBCore.Shared.Items[k], "remove")
             TriggerClientEvent('bbv_vehitems:spawnvehicle',src,v)
             return
         end)
