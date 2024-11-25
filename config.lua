@@ -1,5 +1,5 @@
 Config = {}
-Config.Debug = true
+Config.Debug = false
 
 QBCore = exports['qb-core']:GetCoreObject()  -- uncomment if you use QBCore
 -- ESX = exports["es_extended"]:getSharedObject() -- uncomment if you use ESX
