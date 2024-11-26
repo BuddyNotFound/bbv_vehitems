@@ -47,6 +47,5 @@ RegisterNetEvent('bbv_vehitems:returnitem',function(data)
         end
         local xPlayer = ESX.GetPlayerFromId(src)
         xPlayer.addInventoryItem(item, 1)
-        TriggerClientEvent("inventory:client:ItemBox", src, QBCore.Shared.Items[item], "add")
     end
 end)
